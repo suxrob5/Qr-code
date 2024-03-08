@@ -25,7 +25,7 @@ const Qrcode = () => {
         <form
           action="qr-code"
           onSubmit={handleSubmit}
-          className="flex items-center justify-center border"
+          className="flex items-center justify-center"
         >
           <input
             type="text"
