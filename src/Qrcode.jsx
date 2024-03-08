@@ -15,14 +15,18 @@ const Qrcode = () => {
       );
       setInputValue("");
     } else {
-      alert("Please enter a code name ");
+      alert("Please enter a code name");
     }
   };
 
   return (
     <div className="flex items-center justify-center h-screen w-[100%] bg-gradient-to-r from-blue-500 to-purple-500 to-green-500">
-      <div>
-        <form action="qr-code" onSubmit={handleSubmit}>
+      <div className="w-[98%] mx-auto">
+        <form
+          action="qr-code"
+          onSubmit={handleSubmit}
+          className="flex items-center justify-center border"
+        >
           <input
             type="text"
             placeholder="Enter your text for qr-code"
@@ -37,8 +41,8 @@ const Qrcode = () => {
             Add
           </button>
         </form>
-        <div className="mt-5">
-          <img src={imagesUlr} alt=""  className="w-[100%]"/>
+        <div className="mt-5 w-[90%] mx-auto flex items-center justify-center">
+          <img src={imagesUlr} alt="" className="" />
         </div>
       </div>
     </div>
